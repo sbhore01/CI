@@ -29,7 +29,17 @@ pipeline{
       }
      }
     }
-  
+     stage('Int.testing'){
+      steps{
+        script{
+        
+         sh 'mvn verify -DSkipUnitTests'
+        
+        
+        
+        }
+      }
+     }
   }
 
 }
