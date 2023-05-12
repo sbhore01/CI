@@ -1,10 +1,19 @@
-Pipeline{
+pipeline{
+
   agent any
+  
     stages{
+    
+      stage('GitCheckout'){
+      
       steps{
+      
         script{
+        
+        
            git branch: 'main', url: 'https://github.com/sbhore01/CI.git'
     
+     }
     
     }
    
