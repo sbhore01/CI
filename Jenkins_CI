@@ -1,1 +1,15 @@
+Pipeline{
+  agent any
+    stages{
+      steps{
+        script{
+           git branch: 'main', url: 'https://github.com/sbhore01/CI.git'
+    
+    
+    }
+   
+   }
+  
+  }
 
+}
