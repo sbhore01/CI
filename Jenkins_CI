@@ -33,7 +33,7 @@ pipeline{
       steps{
         script{
         
-         sh 'ls'
+         sh 'mvn clean install'
         
         
         
