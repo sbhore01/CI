@@ -24,16 +24,16 @@ pipeline{
       steps{
        script{
     
-    sh ' mvn test'
+                 sh ' mvn test'
       
       }
      }
     }
-     stage('Int.testing'){
+     stage('Int testing'){
       steps{
         script{
         
-         sh 'mvn verify -DskipUnitTests'
+            sh ' mvn verify -DskipUnitTests '
         
         
         
