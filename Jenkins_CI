@@ -29,11 +29,11 @@ pipeline{
       }
      }
     }
-     stage('Int.testing'){
+     stage('biildtesting'){
       steps{
         script{
         
-         sh 'mvn verify -DskipUnitTests'
+         sh 'mvn clean install'
         
         
         
